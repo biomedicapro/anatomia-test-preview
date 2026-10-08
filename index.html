@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123c3b"><meta name="description" content="Estudia las dos láminas de anfiteatro: identifica cada estructura y revela su nombre uno a uno.">
+<title>Anfiteatro · Identificación anatómica</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header"><a class="brand" href="./" aria-label="Anfiteatro, inicio"><span class="brand-mark" aria-hidden="true">A</span><span>ANFITEATRO<small>Cuaderno de estudio</small></span></a><span class="source-tag">2 láminas · 8 estructuras</span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">OBSERVA · IDENTIFICA · COMPRUEBA</p><h1>La anatomía, nombre a nombre.</h1><p class="subtitle">Piensa la respuesta. Pulsa un número para descubrirla.</p></div><div class="total"><strong id="total-count">0 <span>/ 8</span></strong><span>nombres revelados</span><div class="meter"><i id="meter"></i></div></div></section>
+<div class="workspace">
+<section class="viewer" aria-label="Láminas anatómicas">
+<div class="viewer-top"><nav class="tabs" aria-label="Seleccionar lámina"><button class="tab active" id="tab-0" aria-pressed="true">Lámina 01 <span>1 estructura</span></button><button class="tab" id="tab-1" aria-pressed="false">Lámina 02 <span>7 estructuras</span></button></nav><div class="zoom"><button id="zoom-out" aria-label="Alejar imagen">−</button><output id="zoom-value">100%</output><button id="zoom-in" aria-label="Ampliar imagen">+</button></div></div>
+<div class="image-scroll" id="image-scroll"><div class="anatomy-canvas" id="canvas"><img id="specimen" src="assets/lamina-1.png" alt="Espécimen de la lámina 1 con flechas que señalan estructuras por identificar." draggable="false"><div id="labels"></div></div></div>
+<div class="viewer-bottom"><span><span class="dot"></span>Fotografía y flechas originales</span><span id="page-progress">0 de 1 revelados</span></div>
+</section>
+<aside class="study-panel" aria-label="Controles de estudio"><p class="eyebrow">TU REPASO</p><h2 id="panel-title">Lámina 01</h2><p class="panel-hint">Identifica la estructura antes de revelar su nombre.</p><button class="primary" id="next">Revelar siguiente <span aria-hidden="true">↗</span></button><p class="shortcut">También puedes usar la barra espaciadora</p><div class="answer-list" id="answer-list"></div><div class="secondary-actions"><button id="hide-page">Ocultar lámina</button><button id="show-page">Mostrar lámina</button></div><button class="reset" id="reset">↺ Reiniciar las dos láminas</button><div class="tip"><strong>Un paso cada vez.</strong><p>Los nombres que descubras se mantienen visibles al cambiar de lámina. Pulsa de nuevo para ocultarlos.</p></div></aside>
+</div>
+<p class="instructions">En móvil, amplía la imagen y desliza lateralmente para ver los detalles. También puedes revelar los nombres desde la lista.</p>
+<footer><span>Material de estudio del PDF proporcionado.</span><span>← → Cambiar lámina &nbsp; · &nbsp; H Ocultar lámina</span></footer>
+<p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+</main>
+<script type="module" src="app.mjs"></script>
+</body></html>
